@@ -5,8 +5,10 @@
 ## storage technique of 'caching' is used.
 
 
-# makeCacheMatrix creates a list with the results of taking the inverse of a matrix. The elements of the list
-# can be referenced to determine if a rec
+# makeCacheMatrix creates a list that is a special vector of the functions needed to cache data properly.
+# the functions stored in the list do the following: (1) set the original matrix value (2) get the original matrix value
+# (3) set the inverse value that is calculated (4) get the inverse value that has been previously or just recently calculated
+
 makeCacheMatrix <- function(x = matrix()) {
     # the output inverse matrix is initilized to null
     i <- NULL
